@@ -1,0 +1,238 @@
+<html>
+    <head>
+        <title>Creative Mind | Best EdTech Platform</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><img src="Images/logo.png" alt="Creative-Minds" height="75px"></li>
+                <a href="#" id="courses"><li>COURSES</li></a>
+                <a href="#"><li>Free Live Classes</li></a>
+                <a href="#"><li>Career Support</li></a>
+                <a href="#"><li>More Programs</li></a>
+                <span class="nav-btn">
+                    <button type="button" id="login">Log In</button>
+                    <button type="button" id="signup">Sign Up</button>
+                </span>
+            </ul>
+        </header>
+
+        <section class="slider">
+            <div id="slider-images">
+                <img src="Images/slide-image1.jpeg" alt="Creative-Minds">
+                <img src="Images/slide-image2.jpeg" alt="Creative-Minds">
+                <img src="Images/slide-image3.jpeg" alt="Creative-Minds">
+                <img src="Images/slide-image4.jpeg" alt="Creative-Minds">
+            </div>
+            <div class="indicator">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+        </section>
+
+        <!-- SLIDER SCRIPT START -->
+            <script>
+                var slide = document.getElementById("slider-images");
+                var btn1 = document.getElementById("btn1");
+                var btn2 = document.getElementById("btn2");
+                var btn3 = document.getElementById("btn3");
+                var btn4 = document.getElementById("btn4");
+
+                btn1.onclick = function(){
+                    slide.style.transform = "translateX(0px)";
+                    btn1.classList.add("active");
+                    btn2.classList.remove("active");
+                    btn3.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn2.onclick = function(){
+                    slide.style.transform = "translateX(-100%)";
+                    btn2.classList.add("active");
+                    btn1.classList.remove("active");
+                    btn3.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn3.onclick = function(){
+                    slide.style.transform = "translateX(-200%)";
+                    btn3.classList.add("active");
+                    btn1.classList.remove("active");
+                    btn2.classList.remove("active");
+                    btn4.classList.remove("active");
+                }
+                btn4.onclick = function(){
+                    slide.style.transform = "translateX(-300%)";
+                    btn4.classList.add("active");
+                    btn1.classList.remove("active");
+                    btn2.classList.remove("active");
+                    btn3.classList.remove("active");
+                }
+            </script>
+        <!-- SLIDER SCRIPT END -->
+
+        <section class="Categories">
+            <center>
+                <h1>Top Categories</h1>
+            </center>
+            <div class="top-categories">
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/design.jpg" alt="Design">
+                        </div>
+                    </a>
+                    <h3>Design</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/development.jpg" alt="Development">
+                        </div>
+                    </a>
+                    <h3>Development</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/marketing.jpg" alt="Marketing">
+                        </div>
+                    </a>
+                    <h3>Marketing</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/it-software.jpg" alt="IT & Software">
+                        </div>
+                    </a>
+                    <h3>IT & Software</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/personal-dev.jpg" alt="Personal Development">
+                        </div>
+                    </a>
+                    <h3>Personal Development</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/business.jpg" alt="Business">
+                        </div>
+                    </a>
+                    <h3>Business</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/photography.jpg" alt="Photography">
+                        </div>
+                    </a>
+                    <h3>Photography</h3>
+                </div>
+                <div class="categories-text">
+                    <a href="#">
+                        <div class="categories-image">
+                            <img src="Images/music.jpg" alt="Music">
+                        </div>
+                    </a>
+                    <h3>Music</h3>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="free-demo">
+            <div class="free-demo-content">
+                <div class="free-demo-image">
+                    <img src="Images/free-demo-image.jpg" alt="Creative-Minds">
+                </div>
+                <div class="free-demo-form">
+                        <div class="form-header">
+                            <h1>Book your <span style="color: rgb(250, 111, 24);">Free Demo</span> Session</h1>
+                        </div>
+                        <form>
+                            <div class="form-stat">
+                                <p>Get a free academic counselling session</p>
+                            </div><br>
+                            <div class="form-input">
+                                <input type="text" id="name" placeholder="Enter your Name">
+                            </div><br>
+                            <div class="form-input">
+                                <input type="number" id="mobile" placeholder="Enter your mobile number (India only)" maxlength="10">
+                            </div><br>
+                            <div class="form-input">
+                                <select id="form-course">
+                                    <option value="Select your Class" selected disabled>Select a Course</option>
+                                    <option value="Android">Android Development</option>
+                                    <option value="WebDev">Web Development</option>
+                                    <option value="EthicalHacking">Ethical Hacking</option>
+                                    <option value="ML">Machine Learning</option>
+                                    <option value="AI">Artificial Intelligence</option>
+                                    <option value="DS">Data Science</option>
+                                    <option value="CyberSec">Cyber Security</option>
+                                </select>
+                            </div><br>
+                            <div class="form-input">
+                                <input type="submit" value="Book a Demo" id="demo-button"> 
+                            </div> 
+                        </form>
+                </div>
+                
+            </div>    
+        </section>
+
+
+
+
+
+
+
+        <footer>
+            <div class="footer-links">
+                <div class="creative-minds-info">
+                    <h4>Our Company</h4><br>
+                    <ul>
+                        <a href="#"><li>About Us</li></a>
+                        <a href="#"><li>Mentorship</li></a>
+                        <a href="#"><li>Careers</li></a>
+                        <a href="#"><li>Placement Support</li></a>
+                    </ul>
+                </div>
+                <div class="need-help">
+                    <h4>Need Help?</h4><br>
+                    <ul>
+                        <a href="#"><li>Contact Us</li></a>
+                        <a href="#"><li>Help & Support</li></a>
+                        <a href="#"><li>Terms & Conditions</li></a>
+                        <a href="#"><li>Privacy Policy</li></a>
+                    </ul>
+                </div>
+                <div class="other-links">
+                    <h4>Other Links</h4><br>
+                    <ul>
+                        <a href="#"><li>Free Courses</li></a>
+                        <a href="#"><li>Grievance Redressal</li></a>
+                        <a href="#"><li>Lorem Ipsum</li></a>
+                        <a href="#"><li>Lorem Ipsum</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <dl>
+                    <dt>Creative Minds</dt>
+                    <dd>&nbsp;&nbsp; Let's Grow with Us</dd>
+            </div>
+            <div class="copyright">
+                <p>copyright &copy; 2023 creative-minds.com . All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

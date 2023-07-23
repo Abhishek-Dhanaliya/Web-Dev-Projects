@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    align-items: center;
+}
+
+header{
+    height: 110px;
+    width: auto;
+    background-color: whitesmoke;
+    margin: 10px;
+    line-height: 50px;
+    border-radius: 30px;
+}
+
+header ul{
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: large;
+    padding: 0px 20px;    
+}
+
+
+header ul a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+header ul a:hover{
+    font-size: x-large;
+    color:aqua;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.nav-btn{
+    float: right;
+    margin: 20px;
+    margin-right: 80px;
+}
+
+.nav-btn button{
+    margin: 10px;
+}
+
+#login{
+    height: 50px;
+    width: 80px;
+    font-size: large;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#signup{
+    height: 50px;
+    width: 80px;
+    font-size: large;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.slider{
+    width: 60%;
+    height: 400px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#slider-images{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    transition: 0.5s;
+    position: absolute;
+}
+
+#slider-images img{
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.indicator{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+.indicator span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(246, 12, 12, 0.5);
+    cursor: pointer;
+}
+
+.active{
+    background-color: white !important;
+}
+
+.categories{
+    margin: 50px auto auto 50px;
+}
+
+.categories h1{
+    background-color: black;
+    color: aqua;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+}
+
+.categories div{
+    display: inline-block;
+}
+
+.categories-image{
+    height: 250px;
+    width: 300px;
+}
+
+.categories-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.categories-text{
+    padding: 25px;
+    text-align: center;
+
+}
+
+
+
+
+.free-demo{
+    background-color: antiquewhite;
+    height: auto;
+}
+
+.free-demo-form, .free-demo-image{
+    display: inline-block;
+}
+
+.free-demo-content{
+    margin:auto;
+    padding: 10px;
+}
+
+.free-demo-image{
+    height: 400px;
+    width: 400px;
+    margin-left: 250px;
+}
+
+.free-demo-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.free-demo-form{
+    float: right;
+    height: 400px;
+    padding: 50px;
+    margin-right: 250px;
+}
+
+.form-input{
+    height: 50px;
+}
+
+#name, #mobile, #form-course{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-style: none;
+    color: black;
+}
+
+
+#demo-button{
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(250, 111, 24);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: auto;
+    width: auto;
+    background-color: black;
+    color: rgb(213, 212, 212);
+    position: relative;
+}
+
+footer div{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer div ul li{
+    list-style: none;
+}
+
+footer div ul a{
+    text-decoration: none;
+    color: rgb(81, 79, 79);
+}
+
+footer div ul a:hover{
+    color: rgb(213, 212, 212);
+}
+
+.footer-logo{
+    margin-top: 60px;
+    margin-right: 250px;
+    float: right;
+}
+
+.footer-logo dl dt{
+    font-size: xxx-large;
+}
+
+.footer-logo dl dd{
+    text-align: right;
+}
+
+.creative-minds-info, .need-help, .other-links{
+    padding: 0 20px 0px 20;
+    margin: 50px;
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+}
